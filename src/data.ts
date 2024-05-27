@@ -26,10 +26,10 @@ export const coctailList: Cocktail[] = [
     id: 1,
     name: 'Margarita',
     ingredients: [
-      { name: 'Tequila', quantity: 2, color: colors.tequila },
-      { name: 'Cointreau', quantity: 2, color: colors.cointreau },
-      { name: 'Sok z Limonki', quantity: 2, color: colors.lime },
-      { name: 'Syrop Cukrowy', quantity: 1, color: colors.syrup },
+      { name: 'Tequila', quantity: 1, color: colors.tequila },
+      { name: 'Cointreau', quantity: 1, color: colors.cointreau },
+      { name: 'Sok z Limonki', quantity: 1, color: colors.lime },
+      { name: 'Syrop Cukrowy', quantity: 0.5, color: colors.syrup },
     ],
   },
   {
@@ -64,27 +64,27 @@ export const coctailList: Cocktail[] = [
     id: 5,
     name: 'Daiquiri',
     ingredients: [
-      { name: 'Jasny Rum', quantity: 4, color: colors.rum },
-      { name: 'Sok z Limonki', quantity: 2, color: colors.lime },
-      { name: 'Syrop Cukrowy', quantity: 1, color: colors.syrup },
+      { name: 'Jasny Rum', quantity: 2, color: colors.rum },
+      { name: 'Sok z Limonki', quantity: 1, color: colors.lime },
+      { name: 'Syrop Cukrowy', quantity: 0.5, color: colors.syrup },
     ],
   },
   {
     id: 6,
     name: 'Whiskey Sour',
     ingredients: [
-      { name: 'Whiskey', quantity: 4, color: colors.whiskey },
-      { name: 'Sok z Cytryny', quantity: 2, color: colors.lemon },
-      { name: 'Syrop Cukrowy', quantity: 1, color: colors.syrup },
+      { name: 'Whiskey', quantity: 2, color: colors.whiskey },
+      { name: 'Sok z Cytryny', quantity: 1, color: colors.lemon },
+      { name: 'Syrop Cukrowy', quantity: 0.5, color: colors.syrup },
     ],
   },
   {
     id: 7,
     name: 'Mithering Bastard',
     ingredients: [
-      { name: 'Whiskey', quantity: 5, color: colors.whiskey },
-      { name: 'Cointreau', quantity: 2, color: colors.cointreau },
-      { name: 'Sok Pomaranczowy', quantity: 3, color: colors.orange },
+      { name: 'Whiskey', quantity: 2, color: colors.whiskey },
+      { name: 'Cointreau', quantity: 1, color: colors.cointreau },
+      { name: 'Sok Pomaranczowy', quantity: 1.5, color: colors.orange },
     ],
   },
   {
@@ -103,7 +103,6 @@ export const coctailList: Cocktail[] = [
     ingredients: [
       { name: 'Gin', quantity: 2, color: colors.gin },
       { name: 'Tonic', quantity: 4, color: colors.tonic },
-      { name: 'Sok z Limonki', quantity: 0.5, color: colors.lime },
     ],
   },
   {
@@ -139,11 +138,11 @@ export const coctailList: Cocktail[] = [
     id: 13,
     name: 'Orange Blossom',
     ingredients: [
-      { name: 'Gin', quantity: 4, color: colors.gin },
-      { name: 'Cointreau', quantity: 2, color: colors.cointreau },
-      { name: 'Sok Pomarańczowy', quantity: 4, color: colors.orange },
-      { name: 'Sok z Limonki', quantity: 2, color: colors.lime },
-      { name: 'Grenadyna', quantity: 0.5, color: colors.grenadine },
+      { name: 'Gin', quantity: 2, color: colors.gin },
+      { name: 'Cointreau', quantity: 1, color: colors.cointreau },
+      { name: 'Sok Pomarańczowy', quantity: 2, color: colors.orange },
+      { name: 'Sok z Limonki', quantity: 1, color: colors.lime },
+      { name: 'Grenadyna', quantity: 0.25, color: colors.grenadine },
     ],
   },
   {

@@ -14,11 +14,11 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
   }));
 
   return (
-    <Stack alignItems="center" justifyContent="center"  paddingLeft={4} paddingRight={30} paddingY={4} sx={{
+    <Stack alignItems="center" justifyContent="center" paddingRight={20} paddingY={4} sx={{
         backgroundColor: "#4F8496",
         borderRadius: 4,
     }}>
-      <Typography variant="h4" marginBottom={2} color="#BAE0EB">
+      <Typography variant="h5" marginBottom={2} color="#BAE0EB">
         {cocktail.name}
       </Typography>
       <CocktailChart data={data} />
