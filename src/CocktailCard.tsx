@@ -1,6 +1,7 @@
 import { Cocktail } from './types';
 import CocktailChart from './CocktailChart';
-import { Stack, Typography } from '@mui/material';
+import { Box, Stack, Typography } from '@mui/material';
+import CocktailLegend from './CocktailLegend';
 
 interface CocktailCardProps {
   cocktail: Cocktail;
@@ -14,14 +15,17 @@ export default function CocktailCard({ cocktail }: CocktailCardProps) {
   }));
 
   return (
-    <Stack alignItems="center" justifyContent="center"  paddingLeft={4} paddingRight={30} paddingY={4} sx={{
-        backgroundColor: "#4F8496",
-        borderRadius: 4,
-    }}>
-      <Typography variant="h4" marginBottom={2} color="#BAE0EB">
-        {cocktail.name}
-      </Typography>
-      <CocktailChart data={data} />
+    <Stack direction="row">
+      <Box width={4} sx={{ backgroundColor: 'black' }} />
+      <Stack padding={4}>
+        <Typography variant="h4" marginBottom={2}>
+          {cocktail.name}
+        </Typography>
+        <Stack direction="row" justifyContent="space-between">
+          <CocktailChart data={data} />
+          <CocktailLegend data={data} />
+        </Stack>
+      </Stack>
     </Stack>
   );
 }

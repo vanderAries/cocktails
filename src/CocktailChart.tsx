@@ -8,8 +8,8 @@ interface CocktailChartProps {
 export default function CocktailChart({ data }: CocktailChartProps) {
   return (
     <Stack
-      height={200}
-      width={200}
+      height={120}
+      width={120}
       alignItems="center"
       justifyContent="center"
       borderRadius="50%"
@@ -21,8 +21,8 @@ export default function CocktailChart({ data }: CocktailChartProps) {
       }}
     >
       <Stack
-        height={180}
-        width={180}
+        height={115}
+        width={115}
         borderRadius="50%"
         boxSizing="content-box"
         sx={{
@@ -33,25 +33,17 @@ export default function CocktailChart({ data }: CocktailChartProps) {
           series={[
             {
               data,
-              outerRadius: 98,
+              outerRadius: 56,
               innerRadius: 2,
               paddingAngle: 2,
-              cx: 70,
+              cx: 52,
               highlightScope: { faded: 'global', highlighted: 'item' },
               faded: { additionalRadius: -20, color: 'gray' },
             },
           ]}
-          height={200}
-          width={450}
+
           slotProps={{
-            legend: {
-            seriesToDisplay: data.map((d) => ({ color: d.color, label: `${d.value} x ${d.label} `, id: d.label})),
-              labelStyle: {
-                fill: '#BAE0EB',
-              },
-              direction: 'column',
-              position: { vertical: 'top', horizontal: 'right' },
-            },
+            legend: { hidden: true },
           }}
         />
       </Stack>
